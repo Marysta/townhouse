@@ -378,7 +378,7 @@
                 <div class="module-subtitle font-serif large-text">Розташування - <br>
                   Здача в експлуатацію -
                   <div class="text-center">
-                    <div class="btn-group mt-30"><a class="btn btn-border-d btn-circle" href="#"><i class="fa fa-android"></i> Галерея</a><a class="btn btn-border-d btn-circle" href="#"><i class="fa fa-apple"></i> Опис</a><a class="btn btn-border-d btn-circle" href="#"><i class="fa fa-windows"></i> Контакти</a></div>
+                    <div class="btn-group mt-30"><a class="btn btn-border-d btn-circle" href="#galery"><i class="fa fa-android"></i> Галерея</a><a class="btn btn-border-d btn-circle" href="#opys"><i class="fa fa-apple"></i> Опис</a><a class="btn btn-border-d btn-circle" href="#contact"><i class="fa fa-windows"></i> Контакти</a></div>
                   </div>
                 </div>
               </div>
@@ -524,7 +524,7 @@
         </section>
         <section>
           
-          <div class="container pb-100">
+          <div class="container pb-100 opys">
           
             <div class="row landing-image-text">
               <div class="col-sm-6 col-sm-push-6"><img class="center-block" src="1002.png" alt=""></div>
@@ -578,13 +578,13 @@
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-2">
-                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html">Детальніше</a></div>
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="https://letsdesign.com.ua/interior_appartaments.html">Детальніше</a></div>
               </div>
             </div>
           </div>
         </section>
              <section class="module">
-          <div class="container">
+          <div class="container galery">
              <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
                 <h2 class="module-title font-alt">Галерея</h2>
@@ -631,24 +631,68 @@
             </div>
           </div>
         </section>
-        <section class="module download pb-0">
-          <div class="container text-center">
-            <h2 class="module-title font-alt">Why are you waiting for?</h2>
+ <section class="module-small bg-dark">
+          <div class="container">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3">
-                <p class="module-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.</p><a href="#"><img class="image-button" src="assets/images/landing/apple-store-icon.png"></a><a href="#"><img class="image-button" src="assets/images/landing/playstore-icon.png"></a><a href="#"><img class="image-button" src="assets/images/landing/windows-store-icon.png"></a>
+              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">Перегляд</h3>
+                  <p>Ви також можете замовити перегляд стадії будівництва</p>
+                </div>
               </div>
-            </div><img src="assets/images/landing/landscap-mockup.jpg">
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="#contact">Замовити</a></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module">
+          <div class="container contact">
+            <div class="row">
+              <div class="col-sm-6">
+                <h4 class="font-alt">Зв'язатись з нами</h4><br/>
+                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Ваше Ім'я</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Ваш Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Ваше повідомлення*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Надіслати</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+              <div class="col-sm-6">
+                <h4 class="font-alt">Додаткова інформація</h4><br/>
+                <p>Ви також можете зателефонувати на номер телефону - </p>
+                <hr/>
+                <h4 class="font-alt">Робочі години</h4><br/>
+                <ul class="list-unstyled">
+                  <li>Пн - Пт: 9:00 до 19:00 </li>
+                 
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
         <footer class="footer bg-dark">
           <div class="container">
             <div class="row">
               <div class="col-sm-6">
-                <p class="copyright font-alt">&copy; 2017&nbsp;<a href="index.html">TitaN</a>, All Rights Reserved</p>
+                <p class="copyright font-alt">&copy; 2021&nbsp;<a href="index.html">THouse</a>, All Rights Reserved</p>
               </div>
               <div class="col-sm-6">
-                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a>
                 </div>
               </div>
             </div>
